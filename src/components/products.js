@@ -22,6 +22,7 @@ export class Products extends React.Component {
                 image={item.image} 
                 product_category={item.product_category}
                 price={item.price} 
+                description={item.description}
                 />
         ))
        }
