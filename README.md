@@ -1,7 +1,7 @@
 ## Run
-git clone
-npm install
-npm start
+* git clone
+* npm install
+* npm start
 
 ## Screenshots
 
