@@ -14,16 +14,20 @@ export class Products extends React.Component {
     render() {
         //if the user had posted items, they will be displayed 
         //otherwise, a message will instruct them to navigate to topics
-        let items
+        let items;
         if(this.props.items && this.props.items.length) {
-            items = this.props.items.map((item, index) => (
-            <Card key={index} product_name={item.product_name} 
-            image={item.image} />
+            items = this.props.items.map((item, category, index) => (
+            <Card key={index} 
+                product_name={item.product_name} 
+                image={item.image} 
+                product_category={item.product_category}
+                price={item.price} 
+                />
         ))
        }
         return (
             <div className="dashboard">
-                <div className="dashboard-name">Welcome {this.props.name}</div>
+                <div className="dashboard-name">{this.props.name}</div>
                 <div className="row">
                 <section className="items-list">
                 { this.props.items && this.props.items.length ? items : 
