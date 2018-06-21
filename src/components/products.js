@@ -23,9 +23,8 @@ export class Products extends React.Component {
        }
         return (
             <div className="dashboard">
-                <Header />
                 <div className="dashboard-name">Welcome {this.props.name}</div>
-                <div className="row">Items
+                <div className="row">
                 <section className="items-list">
                 { this.props.items && this.props.items.length ? items : 
                     '' }
