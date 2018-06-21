@@ -1,3 +1,8 @@
+## Run
+git clone
+npm install
+npm start
+
 ## Screenshots
 
 Online Store:
